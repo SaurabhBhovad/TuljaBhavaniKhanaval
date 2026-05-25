@@ -1,0 +1,144 @@
+.menu {
+  width: 100%;
+}
+
+.menu h1 {
+  text-align: center;
+  color: #8B0000;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.category-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #8B0000;
+  background-color: white;
+  color: #8B0000;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.category-btn:hover {
+  background-color: #8B0000;
+  color: white;
+}
+
+.category-btn.active {
+  background-color: #8B0000;
+  color: white;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.food-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.food-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.food-info {
+  padding: 1.5rem;
+}
+
+.food-info h3 {
+  color: #8B0000;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.food-category {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.food-description {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.food-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8B0000;
+}
+
+.add-to-cart-btn {
+  background-color: #FFD700;
+  color: #8B0000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #FFC700;
+}
+
+.loading, .error, .no-items {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+.no-items {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .menu h1 {
+    font-size: 1.8rem;
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .category-filters {
+    gap: 0.5rem;
+  }
+}
