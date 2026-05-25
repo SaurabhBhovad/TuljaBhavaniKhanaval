@@ -1,0 +1,30 @@
+{
+  "name": "tuljabhavani-khanaval",
+  "version": "1.0.0",
+  "description": "Responsive web application for आई तुळजाभवानी खानावळ tiffin service",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "tiffin",
+    "food delivery",
+    "maharashtrian",
+    "khanaval"
+  ],
+  "author": "SaurabhBhovad",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.20",
+    "concurrently": "^7.0.0"
+  }
+}
